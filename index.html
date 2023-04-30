@@ -12,6 +12,11 @@
       rel="stylesheet"
     />
 
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    /> -->
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
@@ -30,14 +35,12 @@
             <span class="menu__item active">Playlist</span>
           </h4>
           <h4 class="playlist-item">
-            <i class="bi bi-music-note-beamed"></i>
             <span>Last Listeting</span>
           </h4>
           <h4 class="playlist-item">
             <span> Recommended</span>
           </h4>
         </div>
-
         <div class="menu__songs">
           <li class="song__item">
             <span>01</span>
@@ -45,12 +48,82 @@
             <h5 class="song__title">
               Hello dude
               <div class="song__subtitle">Woodscream</div>
+              <img src="./img/play.svg" alt="play" id="1" class="image__play" />
+            </h5>
+          </li>
+          <li class="song__item">
+            <span>02</span>
+            <img src="./img/cover1.jpg" alt="img1" />
+            <h5 class="song__title">
+              Hello dude
+              <div class="song__subtitle">Woodscream</div>
+              <img src="./img/play.svg" alt="play" id="1" class="image__play" />
+            </h5>
+          </li>
+          <li class="song__item">
+            <span>03</span>
+            <img src="./img/cover1.jpg" alt="img1" />
+            <h5 class="song__title">
+              Hello dude
+              <div class="song__subtitle">Woodscream</div>
+              <img src="./img/play.svg" alt="play" id="1" class="image__play" />
+            </h5>
+          </li>
+          <li class="song__item">
+            <span>04</span>
+            <img src="./img/cover1.jpg" alt="img1" />
+            <h5 class="song__title">
+              Hello dude
+              <div class="song__subtitle">Woodscream</div>
+              <img src="./img/play.svg" alt="play" id="1" class="image__play" />
             </h5>
           </li>
         </div>
       </div>
-      <div class="songs__slider"></div>
-      <div class="songs__player"></div>
+
+      <div class="songs__slider">
+        <nav class="navigation">
+          <ul class="menu__items">
+            <li class="menu__item">Discover</li>
+            <li class="menu__item">My library</li>
+            <li class="menu__item">Radio</li>
+          </ul>
+          <div class="search">
+            <div class="search__container">
+              <i class="bi bi-search"></i>
+              <input type="text" placeholder="Search..." />
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <div class="songs__player">
+        <div class="player__container">
+          <img src="./img/cover1.jpg" alt="img1" />
+          <h5 class="song__title">
+            Hello dude
+            <div class="song__subtitle">Woodscream</div>
+          </h5>
+          <div class="icons">
+            <i class="bi bi-skip-start-fill icon"></i>
+            <i class="bi bi-play-fill icon"></i>
+            <i class="bi bi-skip-end-fill icon"></i>
+          </div>
+          <span class="current__time-start">00:00</span>
+          <div class="bar">
+            <input type="range" class="range" min="0" max="100" value="0" />
+            <div class="second__bar" class="second__bar"></div>
+            <div class="bar__dot"></div>
+          </div>
+
+          <span class="current__time-end"> 99:99</span>
+
+          <div class="volume">
+            <i class="bi bi-volume-up-fill"></i>
+            <input type="range" min="0" max="100" value="0" class="vol" />
+          </div>
+        </div>
+      </div>
     </header>
 
     <script src="script.js"></script>
